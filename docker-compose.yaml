@@ -2,9 +2,7 @@ version: "3.9"
 
 services:
   api:
-    build:
-      context: .
-    image: pestich/skypro_app_2:$GITHUB_REF_NAME-$GITHUB_RUN_ID
+    image: pestich/skypro_app_2
     ports:
       - 80:80
     volumes:
@@ -14,8 +12,8 @@ services:
   pg:
     image: postgres:latest
     environment:
-      POSTGRES_USER: $DB_USER
-      POSTGRES_PASSWORD: $DB_PASSWORD
-      POSTGRES_DB: $DB_NAME
+      POSTGRES_USER: flask_app
+      POSTGRES_PASSWORD: flask_app_password
+      POSTGRES_DB: flask_app
     volumes:
       - ./pg_data:/var/lib/postgresql/data
