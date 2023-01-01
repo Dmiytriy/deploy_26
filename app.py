@@ -11,5 +11,3 @@ def create_app() -> Flask:
     app.register_blueprint(main_bp)
 
     return app
-
-a = 1
