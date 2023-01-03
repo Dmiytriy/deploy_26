@@ -7,7 +7,7 @@ services:
       - 80:80
     environment:
       - DB_USER=flask_app
-      - DB_PASSWORD=flask_app_password
+      - DB_PASSWORD=12345678
       - DB_NAME=flask_app
       - DB_HOST=pg
     depends_on:
@@ -16,5 +16,5 @@ services:
     image: postgres
     environment:
       - POSTGRES_USER=flask_app
-      - POSTGRES_PASSWORD=flask_app_password
+      - POSTGRES_PASSWORD=12345678
       - POSTGRES_DB=flask_app
