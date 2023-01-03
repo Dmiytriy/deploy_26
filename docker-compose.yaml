@@ -9,10 +9,10 @@ services:
       - DB_USER=flask_app
       - DB_PASSWORD=12345678
       - DB_NAME=flask_app
-      - DB_HOST=pg
+      - DB_HOST=db
     depends_on:
-      - pg
-  pg:
+      - db
+  db:
     image: postgres
     environment:
       - POSTGRES_USER=flask_app
