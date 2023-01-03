@@ -13,7 +13,7 @@ services:
     depends_on:
       - pg
   pg:
-    image: postgres:latest
+    image: postgres
     environment:
       - POSTGRES_USER=$DB_USER
       - POSTGRES_PASSWORD=$DB_PASSWORD

@@ -41,6 +41,6 @@ def test_db():
 
     return jsonify(
         {
-            'result': result
+            'result': result,
         }
     )
